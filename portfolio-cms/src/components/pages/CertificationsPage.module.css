@@ -1,0 +1,18 @@
+.grid { display: flex; flex-direction: column; gap: 10px; }
+.body { padding: 16px 18px; display: flex; gap: 14px; align-items: flex-start; }
+.iconWrap {
+  width: 42px; height: 42px; border-radius: 12px; flex-shrink: 0;
+  background: linear-gradient(135deg, rgba(139,92,246,0.15), rgba(59,130,246,0.15));
+  border: 1px solid rgba(139,92,246,0.2);
+  display: flex; align-items: center; justify-content: center; color: var(--purple);
+}
+.content { flex: 1; min-width: 0; }
+.top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 6px; gap: 12px; }
+.name { font-weight: 600; font-size: 15px; }
+.issuer { font-size: 13px; color: var(--accent); font-weight: 500; margin-top: 1px; }
+.actions { display: flex; gap: 4px; flex-shrink: 0; }
+.meta { display: flex; gap: 14px; font-size: 12px; color: var(--text-muted); margin-bottom: 8px; flex-wrap: wrap; }
+.footer { display: flex; align-items: center; gap: 10px; }
+.verifyLink { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 500; color: var(--text-muted); transition: color 0.15s; }
+.verifyLink:hover { color: var(--accent); }
+.checkbox { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; cursor: pointer; }

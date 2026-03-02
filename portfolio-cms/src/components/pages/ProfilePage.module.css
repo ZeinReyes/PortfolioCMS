@@ -1,0 +1,13 @@
+.layout { display: grid; grid-template-columns: 250px 1fr; gap: 18px; align-items: start; }
+.avatarBody { padding: 28px 18px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+.avatar { width: 74px; height: 74px; border-radius: 50%; background: linear-gradient(135deg, #3b82f6, #8b5cf6); display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 800; color: #fff; font-family: 'Space Grotesk', sans-serif; margin-bottom: 13px; }
+.avatarName { font-weight: 700; font-size: 15px; margin-bottom: 3px; }
+.avatarTitle { font-size: 12px; color: var(--text-muted); margin-bottom: 14px; }
+.avatarLinks { display: flex; gap: 8px; }
+.avatarLink { width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; color: var(--text-muted); transition: all 0.15s; }
+.avatarLink:hover { border-color: var(--accent); color: var(--accent); }
+.formBody { padding: 22px 24px; }
+.formTitle { font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 700; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--border); color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.formGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 14px; }
+.saveRow { display: flex; justify-content: flex-end; margin-top: 6px; }
+@media (max-width: 800px) { .layout { grid-template-columns: 1fr; } .formGrid { grid-template-columns: 1fr; } }

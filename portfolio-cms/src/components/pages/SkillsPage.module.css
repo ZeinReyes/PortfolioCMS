@@ -1,0 +1,12 @@
+.categoriesGrid { display: flex; flex-direction: column; gap: 22px; }
+.categoryTitle { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 10px; padding-left: 2px; }
+.skillsGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.skillBody { padding: 14px 16px; }
+.skillTop { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 10px; gap: 8px; }
+.skillName { font-weight: 600; font-size: 14px; margin-bottom: 5px; }
+.actions { display: flex; gap: 3px; flex-shrink: 0; }
+.levelRow { display: flex; align-items: center; gap: 8px; }
+.track { flex: 1; height: 5px; background: var(--border); border-radius: 3px; overflow: hidden; }
+.fill { height: 100%; background: linear-gradient(90deg, #3b82f6, #8b5cf6); border-radius: 3px; transition: width 0.5s ease; }
+.pct { font-size: 12px; font-weight: 700; color: var(--accent); min-width: 32px; text-align: right; }
+.checkbox { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; cursor: pointer; }

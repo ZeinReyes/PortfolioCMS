@@ -1,0 +1,33 @@
+.welcome { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 28px; gap: 16px; }
+.title { font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 700; }
+.subtitle { color: var(--text-muted); font-size: 14px; margin-top: 4px; }
+.previewLink {
+  padding: 8px 16px; border-radius: var(--radius-md); border: 1.5px solid var(--border);
+  color: var(--text); font-size: 13px; font-weight: 600; transition: all 0.15s; white-space: nowrap; display: inline-flex; align-items: center;
+}
+.previewLink:hover { border-color: var(--accent); color: var(--accent); }
+.statsGrid { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; margin-bottom: 22px; }
+.statCard { padding: 20px; cursor: pointer; }
+.statBody { padding-top: 4px; }
+.statNum { font-size: 34px; font-weight: 800; font-family: 'Space Grotesk', sans-serif; line-height: 1; }
+.statLabel { font-size: 14px; font-weight: 600; margin-top: 6px; }
+.statSub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+.panels { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.panel { padding: 20px; }
+.panelHeader { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.panelTitle { font-weight: 700; font-family: 'Space Grotesk', sans-serif; font-size: 15px; }
+.seeAll { color: var(--accent); font-size: 13px; cursor: pointer; font-weight: 500; background: none; border: none; }
+.seeAll:hover { text-decoration: underline; }
+.list { display: flex; flex-direction: column; }
+.listItem { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border); gap: 12px; }
+.listItem:last-child { border-bottom: none; }
+.listItemTitle { font-weight: 500; font-size: 14px; }
+.listItemSub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+.skillList { display: flex; flex-direction: column; gap: 11px; }
+.skillMeta { display: flex; justify-content: space-between; margin-bottom: 5px; }
+.skillName { font-size: 13px; font-weight: 500; }
+.skillPct { font-size: 12px; color: var(--accent); font-weight: 700; }
+.skillTrack { height: 5px; background: var(--border); border-radius: 3px; overflow: hidden; }
+.skillFill { height: 100%; background: linear-gradient(90deg, #3b82f6, #8b5cf6); border-radius: 3px; }
+.empty { color: var(--text-muted); font-size: 13px; padding: 14px 0; text-align: center; }
+@media (max-width: 1100px) { .statsGrid { grid-template-columns: repeat(2,1fr); } .panels { grid-template-columns: 1fr; } }
