@@ -97,13 +97,6 @@ export default function SkillsPage() {
         <Modal title={modal === 'edit' ? 'Edit Skill' : 'Add Skill'} onClose={() => setModal(null)} onSave={handleSave} saving={saving}>
           <Input label="Skill Name" value={form.name} onChange={v => set('name', v)} required />
           <Input label="Category" value={form.category} onChange={v => set('category', v)} placeholder="e.g. Cloud, Networking, Programming" />
-          <div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
-              <label style={{ fontSize: 12, fontWeight: 600, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Proficiency Level</label>
-              <span style={{ fontSize: 14, fontWeight: 700, color: 'var(--accent)' }}>{form.level}%</span>
-            </div>
-            <input type="range" min="0" max="100" value={form.level} onChange={e => set('level', e.target.value)} style={{ width: '100%', accentColor: 'var(--accent)', marginBottom: 14 }} />
-          </div>
           <label className={styles.checkbox}>
             <input type="checkbox" checked={form.visible} onChange={e => set('visible', e.target.checked)} />
             <span>Visible on portfolio</span>

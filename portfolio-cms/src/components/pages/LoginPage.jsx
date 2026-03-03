@@ -6,8 +6,8 @@ import Button from '../ui/Button'
 import styles from './LoginPage.module.css'
 
 export default function LoginPage() {
-  const [email, setEmail]       = useState('admin@portfolio.com')
-  const [password, setPassword] = useState('admin123')
+  const [email, setEmail]       = useState()
+  const [password, setPassword] = useState()
   const { login, loading, error } = useAuth()
   const navigate = useNavigate()
 
@@ -36,7 +36,6 @@ export default function LoginPage() {
           </Button>
         </div>
 
-        <p className={styles.hint}>Demo · admin@portfolio.com / admin123</p>
       </div>
     </div>
   )
