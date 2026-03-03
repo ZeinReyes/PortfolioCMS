@@ -89,9 +89,6 @@ export default function DashboardPage() {
                 <div className={styles.skillMeta}>
                   <span className={styles.skillName}>{sk.name}</span>
                 </div>
-                <div className={styles.skillTrack}>
-                  <div className={styles.skillFill} style={{ width: `${sk.level}%` }} />
-                </div>
               </div>
             ))}
             {skills.length === 0 && <p className={styles.empty}>No skills yet</p>}
