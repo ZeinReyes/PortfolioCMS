@@ -33,7 +33,7 @@ export default function DashboardPage() {
           <p className={styles.subtitle}>Manage your portfolio content from one place</p>
         </div>
         <a
-          href="http://localhost:3001"
+          href="https://portfolio-02po.onrender.com"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.previewLink}
