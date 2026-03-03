@@ -88,7 +88,6 @@ export default function DashboardPage() {
               <div key={sk._id} className={styles.skillRow}>
                 <div className={styles.skillMeta}>
                   <span className={styles.skillName}>{sk.name}</span>
-                  <span className={styles.skillPct}>{sk.level}%</span>
                 </div>
                 <div className={styles.skillTrack}>
                   <div className={styles.skillFill} style={{ width: `${sk.level}%` }} />

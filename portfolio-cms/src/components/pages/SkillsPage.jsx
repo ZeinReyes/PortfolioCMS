@@ -78,12 +78,6 @@ export default function SkillsPage() {
                           </Button>
                         </div>
                       </div>
-                      <div className={styles.levelRow}>
-                        <div className={styles.track}>
-                          <div className={styles.fill} style={{ width: `${skill.level}%` }} />
-                        </div>
-                        <span className={styles.pct}>{skill.level}%</span>
-                      </div>
                     </div>
                   </Card>
                 ))}
