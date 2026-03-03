@@ -1,7 +1,8 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import Icon from '../ui/Icon'
 import { useProfile } from '../../hooks/useProfile'
 import { useTheme } from '../../context/ThemeContext'
+import { useAuth } from '../../context/AuthContext'
 import styles from './Sidebar.module.css'
 
 const NAV_ITEMS = [
@@ -16,9 +17,16 @@ const NAV_ITEMS = [
 export default function Sidebar({ open }) {
   const { profile } = useProfile()
   const { isDark } = useTheme()
+  const { logout } = useAuth()
+  const navigate = useNavigate()
 
   const initials =
     profile?.name?.split(' ').map(n => n[0]).join('').toUpperCase() || '?'
+
+  const handleLogout = () => {
+    logout()
+    navigate('/login') // redirect to login page
+  }
 
   return (
     <aside
@@ -55,9 +63,7 @@ export default function Sidebar({ open }) {
       <div className={styles.footer}>
         <button
           className={styles.logoutBtn}
-          onClick={() => {
-            console.log('Logout clicked')
-          }}
+          onClick={handleLogout}
         >
           <Icon name="logout" size={17} />
           <span>Logout</span>
